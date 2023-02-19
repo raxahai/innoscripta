@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842557595510",
+    "project_id": "innoscripta-80089",
+    "storage_bucket": "innoscripta-80089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842557595510:android:283917a795e3a1ba6a2457",
+        "android_client_info": {
+          "package_name": "com.raza.innoscripta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842557595510-d88nfjjp6jcfe3b203llh58b6ttl44ci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6ut3lV6yyjmYccpsakbXCDxGEO37HsiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842557595510-d88nfjjp6jcfe3b203llh58b6ttl44ci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
