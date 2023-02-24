@@ -28,7 +28,8 @@ class MyApp extends StatelessWidget {
         FocusScope.of(context).requestFocus();
       },
       child: GetMaterialApp(
-        title: 'Flutter Demo',
+        title: 'Innoscripta',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: 'Casper',
