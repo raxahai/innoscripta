@@ -1,12 +1,15 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:innoscripta/core/exception/exception_handler.dart';
 import 'package:innoscripta/injection_container.dart';
 import 'package:innoscripta/screens/dashboard/presentation/screens/dashboard_screen.dart';
 import 'package:innoscripta/core/utils/global.dart';
 import 'package:innoscripta/screens/login/domain/usecase/login.dart';
 
-class LoginController extends GetxController {
+class LoginController extends GetxController with ExceptionHandler {
   TextEditingController controllerEmail = TextEditingController();
   TextEditingController controllerPassword = TextEditingController();
   final loginFormKey = GlobalKey<FormState>();
@@ -18,8 +21,8 @@ class LoginController extends GetxController {
     isLoading(true);
     final result = await _login(controllerEmail.text, controllerPassword.text);
     isLoading(false);
-    result.fold((l) => print("failure"), (r) {
-      print("successful login");
+    result.fold((l) => handleException(l), (r) {
+      log("successful login");
       Get.offAll(() => DashboardScreen());
     });
   }

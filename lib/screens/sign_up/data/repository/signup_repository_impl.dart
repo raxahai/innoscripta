@@ -15,8 +15,8 @@ class SignupRepositoryImpl implements SignupRepository {
       String email, String password) async {
     try {
       return Right(await remoteDatasource.createUser(email, password));
-    } on FirebaseAuthException {
-      return Left(FirebaseAuthFailure());
+    } on FirebaseAuthException catch (e) {
+      return Left(FirebaseAuthFailure(e.message));
     }
   }
 }

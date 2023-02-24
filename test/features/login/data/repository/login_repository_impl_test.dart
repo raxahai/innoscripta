@@ -44,6 +44,6 @@ void main() {
 
     // assert
     verify(() => mockLoginRemoteDatasource.login(email, password)).called(1);
-    expect(result, Left(FirebaseAuthFailure()));
+    expect(result, const Left(FirebaseAuthFailure("user-not-found")));
   });
 }

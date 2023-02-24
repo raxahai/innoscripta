@@ -47,6 +47,6 @@ void main() {
     // assert
     verify(() => mockSignupRemoteDatasource.createUser(email, password))
         .called(1);
-    expect(result, Left(FirebaseAuthFailure()));
+    expect(result, const Left(FirebaseAuthFailure("500")));
   });
 }

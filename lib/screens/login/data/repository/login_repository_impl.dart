@@ -15,8 +15,8 @@ class LoginRepositoryImpl implements LoginRepository {
       String email, String password) async {
     try {
       return Right(await remoteDatasource.login(email, password));
-    } on FirebaseAuthException {
-      return Left(FirebaseAuthFailure());
+    } on FirebaseAuthException catch (e) {
+      return Left(FirebaseAuthFailure(e.message));
     }
   }
 }
