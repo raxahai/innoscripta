@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class InputField extends StatelessWidget {
   const InputField(
@@ -12,9 +9,9 @@ class InputField extends StatelessWidget {
       this.validator,
       this.obsecure = false,
       this.autovalidateMode,
-      this.keyboardType = null,
+      this.keyboardType,
       this.maxLines = 1,
-      this.minLines = null,
+      this.minLines,
       this.enabled = true,
       this.textInputAction,
       this.onSubmit})

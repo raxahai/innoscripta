@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:innoscripta/screens/forgot_password/presentation/controller/forgot_password_controller.dart';
-import 'package:innoscripta/utils/app_theme_consts.dart';
+import 'package:innoscripta/core/utils/app_theme_consts.dart';
 import 'package:innoscripta/widgets/input_field.dart';
 import 'package:innoscripta/widgets/loader_widget.dart';
 import 'package:innoscripta/widgets/overlay_background.dart';
