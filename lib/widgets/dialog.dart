@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:innoscripta/core/utils/app_theme_consts.dart';
+import 'package:innoscripta/core/utils/app_theme.dart';
 import 'package:innoscripta/widgets/custom_button.dart';
 
 class ErrorDialog extends StatelessWidget {
